@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Max</title>
+</head>
+<body>
+<button type="button" onclick="showMessage();">Click Me!</button>
+<script>
+    function showMessage(){
+        let a = Number(prompt("nhap a: "));
+        let b = Number(prompt("nhap b: "));
+        let c = Number(prompt("nhap c: "));
+        let Max = a;
+        if (b > a){
+            if (c > b){
+                Max = c;
+            }
+            else{
+                if (c > a){
+                    Max = c;
+                }else Max = a;
+            }
+        }
+        alert(Max);
+    }
+</script>
+</body>
+</html>
